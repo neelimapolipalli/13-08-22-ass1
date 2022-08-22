@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,r,c,a[100][100],r1;
+    int sum;
+    printf("Enter row size");
+    scanf("%d",&r);
+    printf("Enter column  size");
+    scanf("%d",&c);
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Enter the row which row sum you want");
+    scanf("%d",&r1);
+    for(i=r1-1;i<r1;i++)
+    {
+        sum=0;
+        for(j=0;j<c;j++)
+        {
+            sum=sum+a[i][j];
+        }
+    }
+    printf("%d",sum);
+
+
+    return 0;
+}
