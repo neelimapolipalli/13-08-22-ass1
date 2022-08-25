@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    char str1[70];
+    int i=0,count=0;
+    printf("Enter a string");
+    gets(str1);
+    for(i=0;str1[i]!='\0';i++)
+    {
+        if(str1[i]==' ')
+        {
+        
+        count++;
+    }
+    }
+    printf("%d",count);
+
+    return 0;
+}
