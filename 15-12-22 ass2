@@ -1,0 +1,13 @@
+n=int(input())
+nl=list(map(int,input().split()))
+el=[]
+ol=[]
+for i in range(0,n):
+    if(nl[i])%2==0:
+        el.append(nl[i])
+    else:
+        ol.append(nl[i])
+l=el+ol
+for i in range(n):
+    print(l[i],end=' ')
+
