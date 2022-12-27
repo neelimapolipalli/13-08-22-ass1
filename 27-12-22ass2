@@ -9,6 +9,6 @@ for i in range(0,n):
     for flag in range(0,flag):
         if flag>=0:
             print(x,'found at index',i)
-        else:
-            print(-1)
+ else:
+    print(-1)
 
