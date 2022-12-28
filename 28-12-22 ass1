@@ -1,0 +1,40 @@
+from tkinter import *
+def addNumbers():
+    res=int(e1.get())+int(e2.get())
+    s.set(res)
+def subNumbers():
+    res1=int(e1.get())-int(e2.get())
+    s1.set(res1)
+def multNumbers():
+    res2=int(e1.get())*int(e2.get())
+    s2.set(res2)
+def devNumbers():
+    res3=int(e1.get())%int(e2.get())
+    s3.set(res3)
+
+cal = Tk()
+s=StringVar()
+s1=StringVar()
+s2=StringVar()
+s3=StringVar()
+Label(cal, text="First").grid(row=0)
+Label(cal, text="Second").grid(row=1)
+res=Label(cal, text="", textvariable=s).grid(row=4,column=1)
+res1=Label(cal, text="", textvariable=s1).grid(row=5,column=1)
+res2=Label(cal, text="", textvariable=s2).grid(row=5,column=3)
+res3=Label(cal, text="", textvariable=s3).grid(row=6,column=1)
+
+e1 = Entry(cal)
+e2 = Entry(cal)
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+b = Button(cal, text="Addition", command=addNumbers)
+b1 = Button(cal, text="subtraction", command=subNumbers)
+b2 = Button(cal, text="Multiplication", command=multNumbers)
+b3= Button(cal, text="Division", command=devNumbers)
+b.grid(row=4)
+b1.grid(row=5)
+b2.grid(row=5,column=2)
+b3.grid(row=6,column=0)
+mainloop()
+
