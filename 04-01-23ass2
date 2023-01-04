@@ -1,0 +1,19 @@
+n=int(input())
+A=[]
+m=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            m.append(A[i][j])
+        elif i+j==n-1:
+             m.append(A[i][j])
+print(max(m))
+
+
+
