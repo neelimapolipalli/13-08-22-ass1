@@ -1,0 +1,6 @@
+email=input()
+phno=(input())
+if email.endswith('@gmail.com') and len(phno)==10:
+    print("registration successfully")
+else:
+    print("check your details")
