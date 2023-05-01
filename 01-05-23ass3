@@ -1,0 +1,7 @@
+a,b,c=map(int,input('Enter numbers : ').split())
+if a>b&a>c:
+    print('a is big')
+elif b>c:
+    print('b is big')
+else:
+    print('c is big')
