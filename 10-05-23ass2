@@ -1,0 +1,19 @@
+import math
+n=int(input())
+n=n+1
+seive=[1]*n
+seive[0]=0
+seive[1]=0
+m=int(math.sqrt(n))
+for i in range(2,m+1):
+    if seive[i]==1:
+        for j in range(i*i,n,i):
+            seive[j]=0
+i,j=map(int,input().split())
+s=0
+for i in range(i,j+1):
+    if seive[i]==1:
+        s=s+i
+print(s)
+        
+
