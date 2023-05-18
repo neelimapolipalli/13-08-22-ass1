@@ -1,0 +1,8 @@
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        winsum=nums[0]
+        maxsum=nums[0]
+        for i in nums[1:]:
+            winsum=max(i,winsum+i)
+            maxsum=max(maxsum,winsum)
+        return maxsum
